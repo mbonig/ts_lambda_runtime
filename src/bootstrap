@@ -1,0 +1,8 @@
+#!/bin/dash -e
+
+export NODE_PATH=/opt/node_modules
+
+/opt/bin/node \
+  --require /opt/node_modules/ts-node/register \
+  --expose-gc \
+  /opt/bootstrap.js
